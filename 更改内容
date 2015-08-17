@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>更改内容</title>
+</head>
+<body>
+	<p id="pid">wo bu kai xin</p>
+	<form>
+		<input type="button" value="button" onclick="demo()">
+	</form>
+	<script>
+		function demo(){
+			document.getElementById("pid").innerHTML="world";
+		}
+		
+	</script>
+</body>
+</html>
