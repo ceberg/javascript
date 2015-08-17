@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>更改属性</title>
+</head>
+<body>
+	<a id="aid" href="http://baidu.com" target="_blank">百度</a>
+	<form>
+		<input type="button" value="button" onclick="demo()">
+	</form>
+	<script>
+		function demo(){
+			document.getElementById("aid").href="http://zhihu.com";
+		}
+	</script>
+</body>
+</html>
