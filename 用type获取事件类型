@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+</head>
+<body>
+	<form>
+		<input id="btn" type="button" value="button" >
+	</form>
+	<script>
+		document.getElementById("btn").addEventListener("mouseover",show)
+		function show(){
+			alert(event.type);
+		}
+	</script>
+</body>
+</html>
