@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>更改内容</title>
+</head>
+<body>
+	<form>
+		<input id="btn" type="button" value="button">
+	</form>
+	<script>
+		document.getElementById("btn").addEventListener("click",function(){alert("hello")});
+	</script>
+</body>
+</html>
