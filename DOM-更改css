@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>更改内容</title>
+	<style>
+		#ss{
+			width:100px;
+			height:100px;
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+	<div id="ss">
+	</div>
+	<form>
+		<input type="button" onclick="demo()" value="button">
+	</form>
+	<script>
+	function demo(){
+		document.getElementById("ss").style.background="blue";}
+	</script>
+</body>
+</html>
