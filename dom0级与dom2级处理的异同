@@ -19,7 +19,6 @@
 		//事件2级
 	btn3.addEventListener('click',show,false);
 	btn3.removeEventListener('click',show,false);
-	
 	//去掉所有的on,onclick ,onmouseover		
   </script>
 </body>
