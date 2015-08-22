@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+<body>
+<div id="testdiv">
+
+</div>
+<script type="text/javascript">
+	var para=document.createElement("p");
+	var txt1=document.createTextNode("this is ");
+	para.appendChild(txt1);
+	var em=document.createElement("a");
+	var txt2=document.createTextNode("my ");
+	para.appendChild(txt2);
+	var txt3=document.createTextNode("content.");
+	para.appendChild(txt3);
+	var testdiv=document.getElementById("testdiv");
+	testdiv.appendChild(para);
+</script> 
+</body>
+</html>
