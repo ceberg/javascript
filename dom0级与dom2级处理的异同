@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>计时器</title>
+
+</head>
+<body>
+  <input type="button" value="button1" id="btn" onclick="show()">
+  <input type="button" value="button2" id="btn2" >
+  <input type="button" value="button3" id="btn3" >
+  <script>
+	function show(){
+		alert('hello world');		}
+		//事件0级
+	btn2.onclick=function(){
+		alert('事件0级');	}
+	btn2.onclick=null;
+		//事件2级
+	btn3.addEventListener('click',show,false);
+	btn3.removeEventListener('click',show,false);
+	
+	//去掉所有的on,onclick ,onmouseover		
+  </script>
+</body>
+</html>
