@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>计时器</title>
+
+</head>
+<body>
+	<input type="button" value="button3" id="btn3" >
+<script>
+
+var eventUtil={
+	addHandler:function(element,type,handler){
+		if(element.addEventListener){
+			element.addEventListener(type,handler,false);
+		}else if(element.attachEvent){
+			element.attachEvent('on'+tyoe,handler);
+		}else{
+			element['on'+type]=handler;
+			}
+		},
+		//,不可去,非常重要
+	removeHandler:function(element,type,handler){
+		if(element.removeEventListener){
+			element.removeEventListener(type,handler,false);
+		}else if(element.detachEvent){
+			element.detachEvent('on'+tyoe,handler);
+		}else{
+			element['on'+type]=null;
+			}
+		}
+	}
+	
+	function show(){
+		alert('hello world');	    
+		}
+	eventUtil.addHandler(btn3,'click',show);
+	//eventUtil.removeHandler(btn3,'click',show);
+</script>
+</body>
+</html>
