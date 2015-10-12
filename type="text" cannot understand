@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+	function timedCount()
+	{
+		document.getElementById('txt').value="5";
+	}
+</script>
+</head>
+
+<body>
+	<form>
+		<input type="button" value="开始计时！" onClick="timedCount()">
+		<input type="text" id="txt" value="9988">
+	</form>
+</body>
+</html>
